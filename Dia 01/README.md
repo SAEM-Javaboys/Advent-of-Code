@@ -16,8 +16,6 @@ Há apenas um problema: ao segurar as duas listas **lado a lado** (seu input no 
 
 Por exemplo:
 
-Por exemplo:
-
 <table>
   <tr><td>3</td><td>4</td></tr>
   <tr><td>4</td><td>3</td></tr>
@@ -25,7 +23,7 @@ Por exemplo:
   <tr><td>1</td><td>3</td></tr>
   <tr><td>3</td><td>9</td></tr>
   <tr><td>3</td><td>3</td></tr>
-</table
+</table>
 
 Talvez as listas estejam apenas um pouco diferentes! Para descobrir, emparelhe os números e meça o quão distantes eles estão. Emparelhe o **menor número da lista da esquerda** com o **menor número da lista da direita**, depois o **segundo menor número da esquerda** com o **segundo menor número da direita** e assim em diante.
 
@@ -45,3 +43,33 @@ Para encontrar a distância total entre a lista da esquerda e a lista da direita
 Sua lista real da esquerda e da direita contêm muitos IDs de locais. Qual é a distância total entre suas listas?
 
 Link: [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)
+
+<details>
+<summary><h2>Parte 2</h2></summary>
+
+Sua análise apenas confirmou o que todos temiam: as duas listas de IDs de local são realmente muito diferentes.
+
+Ou será que são?
+
+Os historiadores não conseguem chegar a um acordo sobre qual grupo cometeu os erros ou como ler a maior parte da caligrafia do historiador-chefe, mas no meio do tumulto você percebe um detalhe interessante: muitas identificações de locais aparecem nas duas listas! Talvez os outros números não sejam identificações de locais, mas sim uma caligrafia mal interpretada.
+
+Aqui estão as listas novamente:
+
+<table>
+  <tr><td>3</td><td>4</td></tr>
+  <tr><td>4</td><td>3</td></tr>
+  <tr><td>2</td><td>5</td></tr>
+  <tr><td>1</td><td>3</td></tr>
+  <tr><td>3</td><td>9</td></tr>
+  <tr><td>3</td><td>3</td></tr>
+</table>
+
+- O primeiro número da lista da esquerda é `3`. Ele aparece na lista da direita três vezes, portanto, a pontuação de similaridade aumenta em `3 * 3 = 9`.
+- O segundo número da lista da esquerda é `4`. Ele aparece na lista da direita uma vez, portanto, a pontuação de similaridade aumenta em `4 * 1 = 4`.
+- O terceiro número na lista da esquerda é `2`. Ele não aparece na lista da direita, portanto, a pontuação de similaridade não aumenta `(2 * 0 = 0)`.
+- O quarto número, `1`, também não aparece na lista da direita.
+- O quinto número, `3`, aparece na lista correta três vezes; a pontuação de similaridade aumenta em `9`.
+- O último número, `3`, aparece na lista certa três vezes; a pontuação de similaridade aumenta novamente em `9`.
+Portanto, para essas listas de exemplo, a pontuação de similaridade no final desse processo é `31` `(9 + 4 + 0 + 0 + 0 + 9 + 9)`.
+
+</details>
