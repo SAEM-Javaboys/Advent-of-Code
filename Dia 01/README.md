@@ -45,7 +45,7 @@ Sua lista real da esquerda e da direita contêm muitos IDs de locais. Qual é a 
 Link: [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)
 
 <details>
-<summary><h2>Parte 2</h2></summary>
+<summary><h2>Parte 2 (veja após finalizar)</h2></summary>
 
 Sua análise apenas confirmou o que todos temiam: as duas listas de IDs de local são realmente muito diferentes.
 
