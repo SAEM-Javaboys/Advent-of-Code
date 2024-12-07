@@ -17,12 +17,12 @@ Há apenas um problema: ao segurar as duas listas **lado a lado** (seu input no 
 Por exemplo:
 
 <table>
-  <tr><td>3</td><td>4</td></tr>
-  <tr><td>4</td><td>3</td></tr>
-  <tr><td>2</td><td>5</td></tr>
-  <tr><td>1</td><td>3</td></tr>
-  <tr><td>3</td><td>9</td></tr>
-  <tr><td>3</td><td>3</td></tr>
+  <tr><td>3 4</td></tr>
+  <tr><td>4 3</td></tr>
+  <tr><td>2 5</td></tr>
+  <tr><td>1 3</td></tr>
+  <tr><td>3 9</td></tr>
+  <tr><td>3 3</td></tr>
 </table>
 
 Talvez as listas estejam apenas um pouco diferentes! Para descobrir, emparelhe os números e meça o quão distantes eles estão. Emparelhe o **menor número da lista da esquerda** com o **menor número da lista da direita**, depois o **segundo menor número da esquerda** com o **segundo menor número da direita** e assim em diante.
